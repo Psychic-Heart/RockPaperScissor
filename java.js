@@ -12,6 +12,7 @@ var result_p = document.getElementById("result_p");
 var rock_div = document.getElementById("Rock");
 var paper_div = document.getElementById("Paper");
 var scissor_div = document.getElementById("Scissor");
+var action_div = document.getElementById("action-message")
 
 function getComputerChoice(_computerChoice) {
     const choice =["Rock","Paper","Scissor"];
@@ -75,6 +76,7 @@ function gameOver() {
     else {
         result_p.innerHTML = "It is a Tie."
     }
+    action_div.innerHTML = "Refresh for New Game..."
 }
 function main() { 
     rock_div.addEventListener('click',function () {
