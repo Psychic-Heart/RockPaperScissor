@@ -51,6 +51,7 @@ function win(_userChoice, _computerChoice)
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${_userChoice} beats ${_computerChoice}.You Win!!!`
 }
+
 function lose(_userChoice, _computerChoice)
 {
     computerScore++;
@@ -60,9 +61,6 @@ function lose(_userChoice, _computerChoice)
 }
 function draw(_userChoice, _computerChoice)
 {
-    // computerMoves.innerHTML = computerMoves;
-    // computerMoves++  
-    // ee code venda
     userScore_span.innerHTML = userScore;
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = "It is a draw!"
@@ -78,6 +76,7 @@ function gameOver() {
     }
     action_div.innerHTML = "Refresh for New Game..."
 }
+
 function main() { 
     rock_div.addEventListener('click',function () {
         if (userMoves<12){
