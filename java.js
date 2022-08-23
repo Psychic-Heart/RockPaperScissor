@@ -72,43 +72,43 @@ function gameOver() {
         result_p.innerHTML = "Sorry. You Lost!"
     }
     else {
-        result_p.innerHTML = "It is a Tie."
+        result_p.innerHTML = "Tie...!"
     }
     action_div.innerHTML = "Refresh for New Game..."
 }
 
 function main() { 
     rock_div.addEventListener('click',function () {
-        if (userMoves<12){
+        if (userMoves<21){
             userMoves++;
             userMoves_span.innerHTML = userMoves;
             console.log(userMoves)
             game("Rock");
         }
-        if(userMoves==12){
+        if(userMoves==21){
             gameOver();
         }
     })
     paper_div.addEventListener('click',function () {
-        if (userMoves<12){
+        if (userMoves<21){
             userMoves++;
             userMoves_span.innerHTML = userMoves;
             console.log(userMoves)
             game("Paper");
         }
-        if(userMoves==12){
+        if(userMoves==21){
             gameOver();
         }
         
     })
     scissor_div.addEventListener('click',function () {
-        if (userMoves<12){
+        if (userMoves<21){
             userMoves++;
             userMoves_span.innerHTML = userMoves;
             console.log(userMoves)
             game("Scissor");
         }
-        if(userMoves==12){
+        if(userMoves==21){
             gameOver();
         }
         
